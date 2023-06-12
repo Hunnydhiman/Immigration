@@ -1,0 +1,25 @@
+.banner {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.4);
+    }
+    &__content {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        h1 {
+            font-size: clamp(3rem,4.5vw,4.5rem);
+            color: var(--text-white);
+            span {
+                display: block;
+            }
+        }
+    }
+}
